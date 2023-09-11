@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
-  console.log(props);
+ // console.log(props);
   // props.title = "Set Title Here";   Read only
   return (
     <nav

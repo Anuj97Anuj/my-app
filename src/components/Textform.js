@@ -7,17 +7,18 @@ export default function Textform(props) {
   //email = "anuj20@gmail.com"; // can't update state directly
   const handleEmail = (event) => {
     setEmail(event.target.value);
-    //  console.log("email", email);
+    // console.log("email", email);
   };
   const handlePassword = (event) => {
     setPassword(event.target.value);
-    console.log(setPassword);
+    // console.log(setPassword);
     // console.log("password", password);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`email: ${email} password: ${password}`);
+    props.showAlert(`success`, "success");
   };
 
   return (
