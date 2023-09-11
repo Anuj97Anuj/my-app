@@ -1,20 +1,24 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Textform from "./components/Textform";
 
-let name = "Anuj";
 function App() {
+  const title = "TextUtils";
+  const aboutText = "About TextUtils";
   return (
     <>
-      <nav>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
-      </nav>
-      <div className="container"></div>
-      <h1>Hello {name}</h1>
-      <p>This is my first react app</p>
+      <Navbar title={title} aboutText={aboutText} />
+      <div className="container my-3">
+        <Textform heading="Login" />
+      </div>
+
+      {/* <Navbar title="TextUtils" /> */}
+
+      {/* <Navbar /> */}
     </>
   );
 }
 
 export default App;
+
