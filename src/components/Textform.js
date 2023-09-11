@@ -36,6 +36,10 @@ export default function Textform(props) {
               aria-describedby="emailHelp"
               value={email}
               onChange={handleEmail}
+              style={{
+                backgroundColor: props.mode === "dark" ? "grey" : "white",
+                color: props.mode === "dark" ? "white" : "#042743",
+              }}
             />
             <div id="emailHelp" className="form-text">
               We'll never share your email with anyone else.
@@ -51,6 +55,10 @@ export default function Textform(props) {
               id="exampleInputPassword1"
               value={password}
               onChange={handlePassword}
+              style={{
+                backgroundColor: props.mode === "dark" ? "grey" : "white",
+                color: props.mode === "dark" ? "white" : "#042743",
+              }}
             />
           </div>
           <div className="mb-3 form-check">
